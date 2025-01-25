@@ -2,9 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'apercu';
+  src: url('../public/Fonts/Apercu\ Mono.otf') format('opentype');
+  /* src: url('../public/Fonts/Apercu\ Mono.otf') format('opentype'); */
+}
+
+@font-face {
+  font-family: 'apercuBold';
+  src: url('../public/Fonts/Apercu\ Pro\ Medium.otf') format('opentype');
+ 
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --apercu: 'apercu',Helvetica, sans-serif, Arial;
+  --apercuBold: 'apercuBold',Helvetica, sans-serif, Arial;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,4 +31,36 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.paused:hover{
+  animation-play-state: paused !important;
+  transition: 250ms ease-in-out;
+}
+
+/* @layer components{
+  .forma::after{
+    @apply content-['9'] absolute -right-1 -top-1 size-5 text-[#fff] text-[11.5px] font-apercuBold font-medium flex justify-center items-center 
+  }
+} */
+
+.forma::after{
+  content: '9';
+  position: absolute;
+  font-size: 12px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 100%;
+  top: -5px;
+  right: -5px;
+  width: 15px;
+  height: 15px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  scale: .6;
+  font-weight: 600;
+  font-family: var(--apercu);
+
 }
