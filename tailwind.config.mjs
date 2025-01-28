@@ -1,9 +1,11 @@
+const {heroui} = require("@heroui/theme");
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@heroui/theme/dist/components/(checkbox|form).js",
   ],
   theme: {
     extend: {
@@ -27,5 +29,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [heroui()],
 };

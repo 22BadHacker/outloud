@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   // title: "𝗶𝗺𝗮𝗽 | 𝗼𝘂𝘁𝗹𝗼𝘂𝗱",
-  // title: "𝗢𝘂𝘁𝗹𝗼𝘂𝗱",
+  title: "𝗢𝘂𝘁𝗹𝗼𝘂𝗱 | Dare to Dream",
   // title: "𝗢𝗨𝗧𝗟𝗢𝗨𝗗",
-  title: "Outloud",
+  // title: "Outloud",
   description: "Outloud platform",
 };
 
@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} w-full relative h-full bg-[#f8f8f8]  ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} w-full overflow-x-hidden relative h-full bg-[#f8f8f8]  ${geistMono.variable} antialiased`}
       >
         <Marquee />
         <Header />
