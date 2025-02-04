@@ -16,6 +16,9 @@ export default {
       fontFamily: {
         apercu: "var(--apercu)",
         apercuBold: "var(--apercuBold)",
+        Titling: "var(--Titling)",
+        TitlingReg: "var(--TitlingReg)",
+        TitlingMed: "var(--TitlingMed)",
         
       },
       animation: {
@@ -28,6 +31,19 @@ export default {
         }
       },
     },
+    screens: {
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+    }
   },
   plugins: [heroui()],
 };

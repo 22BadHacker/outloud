@@ -7,7 +7,7 @@ export const metadata = {
 };
 const page = () => {
   return (
-    <div className='relative w-screen h-screen'>
+    <div className='relative w-screen h-screen bg-[#f8f8f8]'>
         <Sign />
     </div>
   )
